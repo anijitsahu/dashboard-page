@@ -5,7 +5,7 @@ This page is only an demonstration of an Dashboard page UI. For that reason it i
 
 ## Installation
 
-1. Clone the repository using `git clone https://github.com/anijitsahu/dashboard-page.git`
+1. Clone the repository using `git clone https://github.com/anijitsahu/dashboard-page.git` from Git Bash / Command Prompt
 2. Navigate inside the directory `dashboard-page`
 3. Open `index.html` to see the dashboard page
  
