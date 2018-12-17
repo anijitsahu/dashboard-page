@@ -117,10 +117,17 @@ a {
 	font-size: 1.2em;
 }
 
+.mail-icon:hover {
+	color: #ddd;
+}
 .uppercase-text {
 	text-transform: uppercase;
 }
 
 input[type=text]:focus, textarea:focus {
 	background-color: #fff;
+}
+
+.icon-span:hover {
+	color:#ae3c3c;
 }
