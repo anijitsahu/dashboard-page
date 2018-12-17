@@ -69,3 +69,58 @@ a {
 .bod-white {
 	border: 0px;
 }
+
+.user-info {
+	width: 80%;
+	border: solid 1px #ddd;
+	border-radius: 8px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+.black-div {
+	width: 100%;
+	background-color: #292828;
+	position: relative;
+	color: #292828;
+	padding: 22px;
+}
+
+.image-div {
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 15px;
+}
+
+.info-div {
+	text-align: center;
+	padding: 24px;
+}
+
+.user-text {
+	text-align: "justify";
+}
+
+.bold-text {
+	font-size: 22px;
+}
+
+.mail-icon {
+	color: #fff;
+	border-radius: 50px;
+	background-color: #4bea4b;
+	padding: 10px;
+	font-size: 1.2em;
+}
+
+.uppercase-text {
+	text-transform: uppercase;
+}
+
+input[type=text]:focus, textarea:focus {
+	background-color: #fff;
+}

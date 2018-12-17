@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Wipadika Homepage Assignment</title>
+	<title>A Basic Dashboard Page</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 	 crossorigin="anonymous">
@@ -22,7 +22,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
-				<p class="font20 pad10"><strong> WIPADIKA INNOVATION <hr></strong></p>
+				<p class="font20 pad10"><strong class="uppercase-text"> Simple Dashboard
+						<hr></strong></p>
 				<table class="table">
 					<tr>
 						<td style="border: 0px ;"><span class="glyphicon glyphicon-th"></span> DASHBOARD
@@ -75,32 +76,29 @@
 
 				<hr>
 
-				<div class="panel panel-default" style="width: 80%;" class="bod10">
-					<table class="table table-bordered">
-						<tr style="padding: 0 !important">
-							<td style="width : 100%"> <img src="images/images.jpg" width="100%" height="20%"> </td>
-						</tr>
-					</table>
-					<table class="table table-bordered">
-						<tr>
-							<td class="text-center" align="center">
-								<img src="images/face-2.jpg" class="img-circle" width="100px"> <br/>
-								<strong style="font-size: 22PX;">Jon Doe</strong> <br/> <span>@Jon Doe</span> <br/>
-								<div text-align="justify">
-									"I like the way you work it <br> No diggity <br> Bag it up"
-								</div>
-							</td>
-						</tr>
-					</table>
-					<hr>
+				<!-- user info -->
+				<div class="user-info">
+					<div class="black-div">black
+						<img src="images/face-2.jpg" alt="" class="image-div">
+					</div>
+
+					<!-- John Doe info -->
+					<div class="info-div">
+						<strong class="bold-text">John Doe</strong> <br /> <span>@John Doe</span> <br />
+						<div class="user-text">
+							"I like the way you work it <br> No diggity <br> Bag it up"
+						</div>
+					</div>
+
+					<!-- storage space info -->
 					<table class="table ">
 						<tr>
 							<td class="thirty-three" align="center">
-								<strong>12 <br/></strong>
+								<strong>12 <br /></strong>
 								<span>Files</span>
 							</td>
 							<td class="thirty-three" align="center">
-								<strong>2 GB <br/></strong>
+								<strong>2 GB <br /></strong>
 								<span>Used</span></td>
 							<td class="thirty-three" align="center">
 								<strong>24.6$<br></strong>
@@ -119,12 +117,11 @@
 							<img src="images/face-1.jpg" class="img-circle" width="50px" style="margin-bottom: 10px;">
 						</td>
 						<td style="width: 60%;">
-							<strong>Dj Khalid <br/></strong>
+							<strong>Dj Khalid <br /></strong>
 							<span class="text-muted font16">Offline</span>
 						</td>
 						<td>
-							<img src="images/mail.jpg" width="50px">
-
+							<i class="glyphicon glyphicon-envelope mail-icon"></i>
 						</td>
 						</tr>
 						<tr>
@@ -133,11 +130,9 @@
 							</td>
 							<td><strong>Hemanth G <br></strong>
 								<span class="text-success font16">Online</span>
-
 							</td>
 							<td>
-								<img src="images/mail.jpg" width="50px">
-
+								<i class="glyphicon glyphicon-envelope mail-icon"></i>
 							</td>
 						</tr>
 
@@ -147,63 +142,50 @@
 							</td>
 							<td><strong>Flume</strong> <br>
 								<span class="text-danger font16">busy</span>
-
 							</td>
 							<td>
-								<img src="images/mail.jpg" width="50px">
-
+								<i class="glyphicon glyphicon-envelope mail-icon"></i>
 							</td>
 						</tr>
 					</table>
 				</div>
 
 				<!-- Edit Profile Section -->
-
 				<div class="panel panel-default bod10" style="width: 80%; ">
 					<p class="font20">Edit Profile</p>
 					<table class="table">
 						<tr>
-
 							<td>
-								<label style="">Company</label><br>
+								<label>Company</label><br>
 								<input type="text" name="" placeholder="ACME inc" class="width-hundred" />
-
 							</td>
+
 							<td>
 								<label>Username</label><br>
 								<input type="text" name="" placeholder="michael23" class="width-hundred" />
-
 							</td>
+
 							<td>
 								<label>Email Address</label><br>
 								<input type="text" name="" placeholder="Email" class="width-hundred" />
 							</td>
-
-
 						</tr>
-
-
 					</table>
 
 					<table class="table">
 						<tr>
-
 							<td>
 								<label>First Name</label><br>
-								<input type="text" name="" placeholder="Jon" style="width: 100%" />
+								<input type="text" name="" placeholder="John" style="width: 100%" />
 
 							</td>
+
 							<td>
 								<label>Last Name</label><br>
 								<input type="text" name="" placeholder="Doe" style="width: 100%" />
 
 							</td>
-
-
-
 						</tr>
-
-
 					</table>
 
 					<table class="table">
@@ -212,26 +194,19 @@
 							<td>
 								<label>Address</label><br>
 								<input type="text" name="" placeholder="Melboure, Australia" class="width-hundred">
-
 							</td>
-
-
-
 						</tr>
-
-
 					</table>
 
 					<table class="table">
 						<tr>
-
 							<td>
 								<label>City</label><br>
 								<input type="text" name="" placeholder="Melboure" class="pad10 width-hundred">
 
 							</td>
 							<td>
-								<label style="font-color: #d4cecd;">Country</label><br>
+								<label>Country</label><br>
 								<input type="text" name="" placeholder="Australia" class="pad10 width-hundred">
 
 							</td>
@@ -239,16 +214,11 @@
 								<label>Postal Code</label><br>
 								<input type="text" name="" placeholder="ZIP Code" class="pad10 width-hundred">
 							</td>
-
-
 						</tr>
-
-
 					</table>
 
 					<table class="table">
 						<tr>
-
 							<td>
 								<label>About me </label><br>
 								<textarea class="width-hundred pad10" align="left" rows="8">Oh so, your weak rhyme here 
@@ -257,25 +227,24 @@ I'll probably won't, left to my own devices
 But that's the difference in our opinions.
 						</textarea>
 							</td>
-
-
 						</tr>
 					</table>
 					<table class="table">
 						<tr>
-							<td align="center">
+							<td style="text-align: center;">
 								<button class="btn btn-info btn-md" style="border-radius: 20px; padding: 5px;">Update Profile</button>
 							</td>
 						</tr>
 					</table>
 				</div>
 				<div>
-					<hr style="">
+					<hr>
 					<ul class="list-inline">
-						<li>Facebook</li>
-						<li>Twitter</li>
+						<li><a href="https://facebook.com">Facebook</a></li>
+						<li><a href="https://twitter.com">Twitter</a></li>
 						<li style="margin-left: 30%;">
-							&copy; 2017, made with <span class="glyphicon glyphicon-heart text-danger"></span> by <a href="http://www.wipadika.com">Wipadika Innovations</a>
+							&copy; 2019, made with <span class="glyphicon glyphicon-heart text-danger"></span> by <a href="#">Anijit
+								Sau</a>
 						</li>
 					</ul>
 
