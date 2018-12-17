@@ -131,3 +131,7 @@ input[type=text]:focus, textarea:focus {
 .icon-span:hover {
 	color:#ae3c3c;
 }
+
+.bod0 {
+	border: 0px ;
+}
