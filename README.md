@@ -1,5 +1,5 @@
 # dashboard-page
-A simple Dashboard home page using `HTML5`, `CSS3` and `Bootstrap 3`.
+A simple Dashboard home page using [HTML5](https://www.w3schools.com/html/html5_intro.asp), [CSS3](https://www.w3schools.com/css/) and [Bootstrap 3](https://getbootstrap.com/docs/3.3/getting-started/).
 
 This page is only an demonstration of an Dashboard page UI. For that reason it is a static page.
 
