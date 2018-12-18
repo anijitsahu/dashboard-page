@@ -1,4 +1,4 @@
-# Dashboard Page
+# dashboard-page
 A simple Dashboard home page using `HTML5`, `CSS3` and `Bootstrap 3`.
 
 This page is only an demonstration of an Dashboard page UI. For that reason it is a static page.
