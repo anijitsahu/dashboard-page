@@ -119,6 +119,7 @@ a {
 
 .mail-icon:hover {
 	color: #ddd; 
+	cursor: pointer;
 }
 .uppercase-text {
 	text-transform: uppercase;
@@ -130,6 +131,7 @@ input[type=text]:focus, textarea:focus {
 
 .icon-span:hover {
 	color:#ae3c3c;
+	cursor: pointer;
 }
 
 .bod0 {
