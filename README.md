@@ -12,7 +12,7 @@ This page is only an demonstration of an Dashboard page UI. For that reason it i
 
 Clone the repository and navigate to it:
 ```  
-git git clone https://github.com/anijitsahu/dashboard-page.git
+git clone https://github.com/anijitsahu/dashboard-page.git
 cd dashboard-page
 ```
 Open `index.html` with any web browser to see the dashboard page
