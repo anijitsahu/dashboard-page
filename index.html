@@ -4,73 +4,46 @@
 <head>
 	<title>A Basic Dashboard Page</title>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-	<!-- Optional theme -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
-
-	<!-- Latest compiled and minified JavaScript -->
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
 </head>
 
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-12">
 				<p class="font20 pad10"><strong class="uppercase-text"> Simple Dashboard
-						<hr></strong></p>
-				<table class="table">
-					<tr>
-						<td class="bod0 icon-span">
-							<span class="glyphicon glyphicon-th"></span> DASHBOARD
-						</td>
-					</tr>
-					<tr>
-						<td class="bod0 icon-span text-danger">
-							<span class="glyphicon glyphicon-user "></span> USER PROFILE</td>
-					</tr>
-					<tr>
-						<td class="bod0 icon-span">
-							<span class="glyphicon glyphicon-th-list"></span> TABLE LIST
-						</td>
-					</tr>
-					<tr>
-						<td class="bod0 icon-span">
-							<span class="glyphicon glyphicon-text-width"></span> TYPOGRAPHY
-						</td>
-					</tr>
-					<tr>
-						<td class="bod0 icon-span">
-							<span class="glyphicon glyphicon-pencil"></span> ICONS
-						</td>
-					</tr>
-					<tr>
-						<td class="bod0 icon-span">
-							<span class="glyphicon glyphicon-map-marker"></span> MAPS
-						</td>
-					</tr>
-					<tr>
-						<td class="bod0 icon-span">
-							<span class="glyphicon glyphicon-bell "></span> NOTIFICATIONS
-						</td>
-					</tr>
-				</table>
+						<hr>
+					</strong></p>
+
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item list-group-item-action"><i class="fas fa-calendar"></i> DASHBOARD</li>
+					<li class="list-group-item text-danger"><i class="fas fa-user"></i> USER PROFILE</li>
+					<li class="list-group-item list-group-item-action"><i class="fas fa-bell"></i> NOTIFICATIONS
+					</li>
+					<li class="list-group-item list-group-item-action"><i class="fa fa-map-marker"></i> MAPS</li>
+					<li class="list-group-item list-group-item-action"><i class="fas fa-pen"></i> TYPOGRAPHY</li>
+				</ul>
 			</div>
 			<div class="col-md-9" style="background: #f7e5e3; ">
 
 				<!-- User Profile Section -->
 				<div>
 
-					<ul class="list-inline">
-						<li class="pad10 font20"> <strong>User Profile</strong></li>
-						<li style="margin-left: 35%" class="icon-span"> <span class="glyphicon glyphicon-th icon-span"></span> Stats</li>
-						<li float="right" class="icon-span"> <span class="glyphicon glyphicon-bell"></span> 5 Notifications</li>
-						<li float="right" class="icon-span"> <span class="glyphicon glyphicon-cog icon-span"></span> Settings</li>
+					<ul class="list-group list-group-flush list-group-horizontal">
+						<li class="list-group-item pad10 font20 list-item-noborder"> <strong>User Profile</strong></li>
+						<li style="margin-left: 35%" class="list-group-item list-item-noborder"> <i
+								class="far fa-chart-bar"></i> Stats</li>
+						<li float="right" class="list-group-item  list-item-noborder"> <i class="fas fa-bell"></i> 5
+							Notifications</li>
+						<li float="right" class="list-group-item  list-item-noborder">
+							<i class="fas fa-cog"></i>
+							Settings
+						</li>
 					</ul>
 
 				</div>
@@ -85,9 +58,14 @@
 
 					<!-- John Doe info -->
 					<div class="info-div">
-						<strong class="bold-text">John Doe</strong> <br /> <span>@John Doe</span> <br />
-						<div class="user-text">
-							"I like the way you work it <br> No diggity <br> Bag it up"
+						<strong class="bold-text">John Doe</strong> <br /> <span class="light-color-text">@John
+							Doe</span> <br />
+						<div class="user-text light-color-text">
+							<i class="fas fa-quote-left"></i> <span style="padding: 10px; font-style: italic;">I like
+								the way you work it
+								<br> No diggity <br> Bag
+								it up </span>
+							<i class="fas fa-quote-right"></i>
 						</div>
 					</div>
 
@@ -96,156 +74,163 @@
 						<tr>
 							<td class="thirty-three" align="center">
 								<strong>12 <br /></strong>
-								<span>Files</span>
+								<span class="light-color-text">Files</span>
 							</td>
 							<td class="thirty-three" align="center">
 								<strong>2 GB <br /></strong>
-								<span>Used</span></td>
+								<span class="light-color-text">Used</span>
+							</td>
 							<td class="thirty-three" align="center">
 								<strong>24.6$<br></strong>
-								<span>spent</span>
+								<span class="light-color-text">spent</span>
 							</td>
 						</tr>
 					</table>
 				</div>
 
 				<!-- Team Members Section -->
-				<div class="panel panel-default" style="width: 80%; border-radius: 10px; padding: 10px;">
-					<p class="font20">Team Members</p>
-					<table class="table">
+				<div class="card margin-10">
+					<div class="card-body">
+						<div class="card-title">Team Members</div>
+						<table class="table">
 
-						<td style="width: 30%;">
-							<img src="images/face-1.jpg" class="img-circle" width="50px" style="margin-bottom: 10px;">
-						</td>
-						<td style="width: 60%;">
-							<strong>Dj Khalid <br /></strong>
-							<span class="text-muted font16">Offline</span>
-						</td>
-						<td>
-							<i class="glyphicon glyphicon-envelope mail-icon"></i>
-						</td>
-						</tr>
-						<tr>
 							<td>
-								<img src="images/face-1.jpg" class="img-circle" width="50px">
-							</td>
-							<td><strong>Hemanth G <br></strong>
-								<span class="text-success font16">Online</span>
+								<img src="images/face-1.jpg" class="img-circle margin-10" width="50px">
 							</td>
 							<td>
-								<i class="glyphicon glyphicon-envelope mail-icon"></i>
+								<strong>Alice <br /></strong>
+								<span class="text-muted font16">Offline</span>
 							</td>
-						</tr>
+							<td>
+								<i class="fas fa-envelope mail-icon"></i>
+							</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/face-1.jpg" class="img-circle" width="50px">
+								</td>
+								<td><strong>Jane Doe <br></strong>
+									<span class="text-success font16">Online</span>
+								</td>
+								<td>
+									<i class="fas fa-envelope mail-icon"></i>
+								</td>
+							</tr>
 
-						<tr>
-							<td>
-								<img src="images/face-3.jpg" class="img-circle" width="50px">
-							</td>
-							<td><strong>Flume</strong> <br>
-								<span class="text-danger font16">busy</span>
-							</td>
-							<td>
-								<i class="glyphicon glyphicon-envelope mail-icon"></i>
-							</td>
-						</tr>
-					</table>
+							<tr>
+								<td>
+									<img src="images/face-3.jpg" class="img-circle" width="50px">
+								</td>
+								<td><strong>Flume</strong> <br>
+									<span class="text-danger font16">busy</span>
+								</td>
+								<td>
+									<i class="fas fa-envelope mail-icon"></i>
+								</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 
 				<!-- Edit Profile Section -->
-				<div class="panel panel-default bod10" style="width: 80%; ">
-					<p class="font20">Edit Profile</p>
-					<table class="table">
-						<tr>
-							<td>
-								<label>Company</label><br>
-								<input type="text" name="" placeholder="ACME inc" class="width-hundred" />
-							</td>
+				<div class="card">
+					<div class="card-body">
+						<div class="card-title">Edit Profile</div>
+						<table class="table">
+							<tr>
+								<td>
+									<label>Company</label><br>
+									<input type="text" name="" placeholder="ACME inc" class="width-hundred" />
+								</td>
 
-							<td>
-								<label>Username</label><br>
-								<input type="text" name="" placeholder="michael23" class="width-hundred" />
-							</td>
+								<td>
+									<label>Username</label><br>
+									<input type="text" name="" placeholder="michael23" class="width-hundred" />
+								</td>
 
-							<td>
-								<label>Email Address</label><br>
-								<input type="text" name="" placeholder="Email" class="width-hundred" />
-							</td>
-						</tr>
-					</table>
+								<td>
+									<label>Email Address</label><br>
+									<input type="text" name="" placeholder="Email" class="width-hundred" />
+								</td>
+							</tr>
+						</table>
 
-					<table class="table">
-						<tr>
-							<td>
-								<label>First Name</label><br>
-								<input type="text" name="" placeholder="John" style="width: 100%" />
+						<table class="table">
+							<tr>
+								<td>
+									<label>First Name</label><br>
+									<input type="text" name="" placeholder="John" style="width: 100%" />
+								</td>
 
-							</td>
+								<td>
+									<label>Last Name</label><br>
+									<input type="text" name="" placeholder="Doe" style="width: 100%" />
 
-							<td>
-								<label>Last Name</label><br>
-								<input type="text" name="" placeholder="Doe" style="width: 100%" />
+								</td>
+							</tr>
+						</table>
 
-							</td>
-						</tr>
-					</table>
+						<table class="table">
+							<tr>
 
-					<table class="table">
-						<tr>
+								<td>
+									<label>Address</label><br>
+									<input type="text" name="" placeholder="Melboure, Australia" class="width-hundred">
+								</td>
+							</tr>
+						</table>
 
-							<td>
-								<label>Address</label><br>
-								<input type="text" name="" placeholder="Melboure, Australia" class="width-hundred">
-							</td>
-						</tr>
-					</table>
+						<table class="table">
+							<tr>
+								<td>
+									<label>City</label><br>
+									<input type="text" name="" placeholder="Melboure" class="pad10 width-hundred">
 
-					<table class="table">
-						<tr>
-							<td>
-								<label>City</label><br>
-								<input type="text" name="" placeholder="Melboure" class="pad10 width-hundred">
+								</td>
+								<td>
+									<label>Country</label><br>
+									<input type="text" name="" placeholder="Australia" class="pad10 width-hundred">
 
-							</td>
-							<td>
-								<label>Country</label><br>
-								<input type="text" name="" placeholder="Australia" class="pad10 width-hundred">
+								</td>
+								<td>
+									<label>Postal Code</label><br>
+									<input type="text" name="" placeholder="ZIP Code" class="pad10 width-hundred">
+								</td>
+							</tr>
+						</table>
 
-							</td>
-							<td>
-								<label>Postal Code</label><br>
-								<input type="text" name="" placeholder="ZIP Code" class="pad10 width-hundred">
-							</td>
-						</tr>
-					</table>
-
-					<table class="table">
-						<tr>
-							<td>
-								<label>About me </label><br>
-								<textarea class="width-hundred pad10" align="left" rows="8">Oh so, your weak rhyme here 
+						<table class="table">
+							<tr>
+								<td>
+									<label>About me </label><br>
+									<textarea class="width-hundred pad10" align="left" rows="8">Oh so, your weak rhyme here 
 Your doubt I'll bother, reading into it 
 I'll probably won't, left to my own devices 
 But that's the difference in our opinions.
 						</textarea>
-							</td>
-						</tr>
-					</table>
-					<table class="table">
-						<tr>
-							<td style="text-align: center;">
-								<button class="btn btn-info btn-md" style="border-radius: 20px; padding: 5px;">Update Profile</button>
-							</td>
-						</tr>
-					</table>
+								</td>
+							</tr>
+						</table>
+						<table class="table">
+							<tr>
+								<td style="text-align: center;">
+									<button class="btn btn-info btn-md"
+										style="border-radius: 20px; padding: 5px;">Update
+										Profile</button>
+								</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 				<div>
 					<hr>
-					<ul class="list-inline">
-						<li><a href="https://facebook.com">Facebook</a></li>
-						<li><a href="https://twitter.com">Twitter</a></li>
-						<li style="margin-left: 30%;">
-							&copy; 2019, made with <span class="glyphicon glyphicon-heart text-danger"></span> by <a href="#">Anijit
-								Sau</a>
+					<ul class="list-group list-group-horizontal">
+						<li class="list-group-item list-item-noborder"><a href="https://facebook.com">Facebook</a></li>
+						<li class="list-group-item list-item-noborder"><a href="https://twitter.com">Twitter</a></li>
+						<li class="list-group-item list-item-noborder" style="margin-left: 30%;">
+							&copy; 2021, made with <i class="fas fa-heart text-danger"></i> by <a
+								href="https://github.com/anijitsahu">Anijit
+							</a>
 						</li>
 					</ul>
 
